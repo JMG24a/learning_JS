@@ -1,0 +1,1 @@
+se puede usar await fuera de una funcion async en ECMAS

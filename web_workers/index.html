@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <title>Web Worker</title>
+</head>
+
+<style>
+    body{
+        background: rgba(43, 40, 40, 0.11);
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+<body>
+    <section>
+        <div>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse corporis, facilis, eveniet architecto qui nostrum voluptatem rem reiciendis vero fugit expedita laboriosam voluptates quam, totam dicta fugiat asperiores quod commodi.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci quidem sunt! Nesciunt, dolor enim quia commodi ea pariatur, eligendi nihil placeat ab nam nulla quidem cupiditate, natus quam ipsum.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequuntur accusantium perferendis. Amet asperiores qui atque. Architecto minus quidem, libero dignissimos odio reiciendis minima ipsa accusantium iusto, placeat nostrum nobis.
+            </p>
+        </div>
+
+        <div>
+            <p>calcular fibonacci</p>
+            <input type="number" style="width: 50%; margin: 0 auto;" id="fibNumber">
+            <button
+                id="fibButton"
+                style="
+                    width: 50%; 
+                    margin: 0 auto; 
+                    background-color: rgba(15, 142, 245, 0.831);"
+            >
+                Enviar
+            </button>
+            <p id="fibResult">Total: </p>
+        </div>
+
+        <div>
+            <p>volumen</p>
+            <input type="range" id="volume" min="0" max="100" value="50">
+            <p>Value: <output id="volumeResult">50%</output></p>
+        </div>
+    </section>
+</body>
+</html>
