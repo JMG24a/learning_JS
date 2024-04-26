@@ -30,7 +30,7 @@ fs.readFile('./01_fs.txt', 'utf-8', (error, text)=>{
     } catch {
         console.log('error 1: ', error)
     }
-});
+})
 
 console.log('Read 2: ', 'Is not a blocking function')
 
