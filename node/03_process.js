@@ -1,11 +1,22 @@
 // process
 console.log(process.argv)
 
-process.on('exit', () => {
-  console.log('limpiar los recursos')
+process.on('uncaughtException', (error, origin) => {
+  console.error('Error no cath: ',error)
+  console.error('error type: ', origin)
 })
 
-console.log(process.env.PEPITO)
+process.on('beforeExit', () => {
+  console.log('pre-exit');
+})
+
+process.on('exit', () => {
+  console.log('clear resource');
+})
+
+hola()
+
+// console.log(process.env.PEPITO)
 
 console.log(process.cwd())
 
